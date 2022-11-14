@@ -23,5 +23,24 @@ public class Main {
             System.out.println("Человек окончил университет и ему пора искать первую работу");
         }
 
+        //Задание №3
+        int totalSeats = 102;
+        int seat = 60;
+        int standingSeats = totalSeats - seat;
+
+        int occupiedSeat = 51;
+        int occupiedStandingSeats = 42;
+
+        if (occupiedSeat + occupiedStandingSeats == totalSeats) {
+            System.out.println("Все места заняты");
+        }
+        if (occupiedSeat < seat) {
+            System.out.println("Свободных сидячих мест осталось " + (seat - occupiedSeat));
+        }
+        if (occupiedStandingSeats < standingSeats) {
+            System.out.println("Свободных стоячих мест осталось " + (standingSeats - occupiedStandingSeats));
+        }
+
+
     }
 }
